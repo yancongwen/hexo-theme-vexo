@@ -1,0 +1,57 @@
+author: 码字仓颉
+description: YanCongwen's blog
+keyword: hexo-theme, vuejs
+favicon: 
+
+excerpt_link: Read more
+
+menu:
+ Home: /
+ Tags: /tags/
+ Archives: /archives/
+ Projects: /project/
+ About: /about/
+
+# highlight
+highlight:
+  tomorrow
+
+# catalog
+catalog: true
+
+# donate
+donate: true
+
+# qrcode
+qrcode: true
+
+# comment
+# you can set gitment or uyan
+
+comment: gitment
+
+# gitment config
+gitment_owner: yancongwen
+gitment_repo: yancongwen.github.io
+gitment_oauth_id: 02174d3254dfb22cad14
+gitment_oauth_secret: 8b1b6cc959763002b07fc42cf784760557dbda55
+
+# uyan
+# if you want to use uyan as your blog comment, plz remove/comment out gitment config
+
+baidu_id: 
+
+about: 
+  banner: https://img.yancongwen.cn/18-4-18/64578068.jpg
+  avatar: https://img.yancongwen.cn/18-4-12/34996969.jpg
+  description: "The end is always near."
+  weibo_username: yancongwen
+  twitter_username: JevonYan
+  github_username: yancongwen
+  zhihu_username: yancongwen
+
+# MathJax Support
+mathjax:
+  enable: true
+  per_page: false
+  cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
