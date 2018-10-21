@@ -48,18 +48,17 @@
       </div>
     <% } %>
     <!-- 二维码 END -->
+    <!-- 评论系统 START-->
+      <!-- 畅言评论 -->
+      <div id="SOHUCS" sid="<%- page.title %>" ></div> 
     <% if (theme.comment === 'gitment') { %>
       <!-- Gitment START -->
       <div id="comments"></div>
       <!-- Gitment END -->
-    <% } else if (theme.comment === 'uyan') { %>
-      <!-- UY START -->
-      <div id="uyan_frame"></div>
-      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
-      <!-- UY END -->
     <% } else { %>
       <!-- No Comment -->
     <% } %>
+    <!-- 评论系统 END-->
   </article>
   <!-- Article END -->
   <!-- Catalog START -->
@@ -150,4 +149,13 @@
       gitment.render(document.getElementById('comments'))
     }
   })();
+</script>
+<script type="text/javascript"> 
+(function(){
+    // 畅言
+    var appid = 'cytStL3tK'; 
+    var conf = 'prod_f38bea1a135accadbdde83654e7d9c10'; 
+    var width = window.innerWidth || document.documentElement.clientWidth; 
+    if (width < 960) { 
+    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); 
 </script>
